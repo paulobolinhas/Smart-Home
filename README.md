@@ -2,17 +2,17 @@
 Design and development of an interface for a Smart Home.
 
 --------------
-- A barra de notifcaçoes mostraria notificações relativas ao estado da casa.
-- No menu Segurança os botões de ver câmera não estão implementados, e serviriam para ver as câmaras.
-- Neste mesmo menu o botão trancar portas também não está implementado.
-- No aviso de segurança o botão para ver as câmaras levaria ao um tela para a câmara na qual se consegue identifcar o intruso, o botão ligar a polícia
-contacta a policia e trancar portas tranca as portas, todos estes botôes exceto o cancelar levam ao menu da segurança onde o utilizador tem algumas destas
-funcionalidades disponiveis.
-- No menu Varanda botão camera não está implementado, este botao levaria ao video ao vivo da camara da varanda.
-- No menu dos horarios para a rega automatica da varanda não estão implementadas as funcionalidades para apagar horarios, ou modificar horarios ja existentes.
-- A ideia para executar estas funcionalidades seria ao primir um horario, o item selecionado seria visualmente modificado dando o poder para eliminar o horario
-ou modifica-lo. 
-- No menu de escolher um prato para preparar o botão Novo Prato seriviria para criar uma nova receita para uma refeição que seria acresecentada na lista.
-- Neste menu ao pressionar numa receita seria possivel eliminar a receita ou então mudar a receita.
-- No menu da Garagem o botão camera não está implementado, este botao levaria ao video ao vivo da camara da garagem.
+- The notifications bar would show notifications regarding the state of the house.
+- In the Security menu, the view camera buttons are not implemented, and would be used to view the cameras.
+- In this same menu, the lock doors button is also not implemented.
+- In the security warning, the button to see the cameras would lead to a screen for the camera in which the intruder can be identified, the button to call the police
+contact the police and lock doors lock the doors, all these buttons except cancel lead to the security menu where the user has some of these
+available features.
+- In Balcony menu camera button is not implemented, this button would lead to live video from balcony camera.
+- The functions for deleting schedules or modifying existing schedules are not implemented in the schedule menu for automatic watering of the balcony.
+- The idea to execute these functionalities would be when pressing a timetable, the selected item would be visually modified giving the power to eliminate the timetable
+or modify it.
+- In the menu to choose a dish to prepare, the New Dish button would be used to create a new recipe for a meal that would be added to the list.
+- In this menu, when pressing on a recipe, it would be possible to delete the recipe or change the recipe.
+- In the Garage menu the camera button is not implemented, this button would lead to the live video from the garage camera.
 --------------
