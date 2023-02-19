@@ -1,0 +1,102 @@
+#container{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 6% 80% 14%;
+    grid-template-areas:
+        "notbar notbar c"
+        "menu main main"
+        "menu back back";
+}
+ 
+nav{
+    grid-area: menu;
+}
+
+main{
+    grid-area: main;
+}
+
+.sub-title{
+    width: 100%;
+}
+
+#temperature-container{
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: 
+        "kitchen-label temp1"
+        "balcony-label temp2"
+        "garage-label temp3"
+        "bedroom-label temp4"
+        "livingroom-label temp5"
+        "WC-label temp6";
+}
+
+button:active{
+    border-style: inset;
+}
+
+#temperature1, #temperature2, #temperature3, #temperature4, #temperature5, #temperature6{
+    justify-content: end;
+}
+
+#kitchen-label{
+    grid-area: kitchen-label;
+}
+
+#temperature1{
+    grid-area: temp1;
+}
+
+#balcony-label{
+    border-top: 1px solid white;
+    grid-area: balcony-label;
+}
+
+#temperature2{
+    border-top: 1px solid white;
+    grid-area: temp2;
+}
+
+#garage-label{
+    border-top: 1px solid white;
+    grid-area: garage-label;
+}
+
+#temperature3{
+    border-top: 1px solid white;
+    grid-area: temp3;
+}
+
+#bedroom-label{
+    border-top: 1px solid white;
+    grid-area: bedroom-label;
+}
+
+#temperature4{
+    border-top: 1px solid white;
+    grid-area: temp4;
+}
+
+#livingroom-label{
+    border-top: 1px solid white;
+    grid-area: livingroom-label;
+}
+
+#temperature5{
+    border-top: 1px solid white;
+    grid-area: temp5;
+}
+
+#WC-label{
+    border-top: 1px solid white;
+    grid-area: WC-label;
+}
+
+#temperature6{
+    border-top: 1px solid white;
+    grid-area: temp6;
+}
+

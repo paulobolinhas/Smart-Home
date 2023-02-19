@@ -1,0 +1,77 @@
+#container{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 6% 80% 14%;
+    grid-template-areas:
+        "notbar notbar c"
+        "menu main main"
+        "menu back back";
+}
+
+nav{
+    grid-area: menu;
+}
+
+main{
+    font-size: 1em;
+    grid-area: main;
+}
+
+footer{
+    grid-area: back;
+}
+
+#balcony-container{
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: 
+        "temp-label temp"
+        "lights-label lights-btn"
+        "schedule-label schedule-link"
+        "camera-label camera-link";
+}
+
+#temperature-label{
+    grid-area: temp-label;
+}
+
+#temperature{
+    grid-area: temp;
+}
+
+#lights-label{
+    border-top: 1px solid white;
+    grid-area: lights-label;
+}
+
+#lights-btn{
+    border-top: 1px solid white;
+    grid-area: lights-btn;
+}
+
+#schedule-label{
+    border-top: 1px solid white;
+    grid-area: schedule-label;
+}
+
+#schedule-link{
+    border-top: 1px solid white;
+    grid-area: schedule-link;
+}
+
+#camera-label{
+    border-top: 1px solid white;
+    grid-area: camera-label;
+}
+
+#camera-link{
+    border-top: 1px solid white;
+    grid-area: camera-link ;
+}
+
+#temperature,#lights-btn,#schedule-link,#camera-link{
+    width: 100%;
+    justify-content: end;
+}

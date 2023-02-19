@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A minha casa inteligente</title>
+    <link rel="stylesheet" href="styles/style.css">      
+    <link rel="stylesheet" href="styles/bedroomstyles.css">
+    <script src="scripts/scripts.js" async></script>
+    <script src="scripts/bedroom_script.js" async></script>
+</head>
+<body onload=startTime();>
+    <div id = "container">
+        
+        <div id="notbar">
+            &#128267; <span id='clock'></span>
+        </div>
+
+        <div id="c">
+            &#128274; &#128263; &#128233; &#128246; 
+        </div>
+        
+        <nav >
+            <h2 class= "nav-menu sub-title">Divisões</h2>
+            <ul id = "list">
+                <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
+                <a href="balcony.html"><li class="button">Varanda</li>  </a>
+                <a href="garage.html"> <li class="button">Garagem</li>  </a>
+                <a href="bedroom.html"> <li class="button">Quarto</li>             </a>
+                <a href="livingroom.html"> <li class="button">Sala</li> </a>
+                <a href="wc.html"> <li class="button">WC</li>           </a>    
+            </ul>
+        </nav>
+
+        <main >
+            <h1>Quarto</h1>
+            <div id = "bedroom-container">
+                <span id="temperature-label" class="grid-item">Temperatura </span> 
+                <span class="grid-item" id="temperature"><button class="temp-controller">-</button><span id="temperature-value">20</span>ºC<button class="temp-controller">+</button> </span>
+                <br>
+                <span class="grid-item" id="lights-label">Luzes</span> 
+                <span id="lights-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                <span id="heat-bed-label" class="grid-item">Aquecer Cama</span>
+                <span id="heat-bed-btn" class="grid-item" ><button>Aquecer</button></span> 
+                <br>
+                <span id = "blinds-label" class="grid-item">Estores</span> 
+                <span id = "blinds-btn" class="grid-item"><button id="openOrClose">Abrir</button></span>
+                
+                <div id="warm-bed-window">
+                    Insira a temperatura que pretende para a cama <br>
+                    <div id="temp-container">
+                        <button class="bed-temp-controller">-</button><span id="bed-temperature-value">20</span>ºC<button class="bed-temp-controller">+</button>
+                    </div>
+                    <div id="buttons-container">
+                        <button id="cancel">Cancelar</button>
+                        <button id = "ok">Ok</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer class="back">
+            <a class="button" href="main.html">Página Principal</a>
+        </footer>
+    </div>
+</body>
+</html>

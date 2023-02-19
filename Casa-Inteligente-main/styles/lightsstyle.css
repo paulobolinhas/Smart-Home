@@ -1,0 +1,102 @@
+#container{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 6% 80% 14%;
+    grid-template-areas:
+        "notbar notbar c"
+        "menu main main"
+        "menu back back";
+}
+ 
+nav{
+    grid-area: menu;
+}
+
+main{
+    grid-area: main;
+}
+
+.sub-title{
+    width: 100%;
+}
+
+#lights-container{
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "kitchen-label kitchen-btn"
+        "balcony-label balcony-btn"
+        "garage-label garage-btn"
+        "bedroom-label bedroom-btn"
+        "livingroom-label livingroom-btn"
+        "wc-label wc-btn";
+}
+
+button:active{
+    border-style: inset;
+}
+
+#kitchen-btn, #balcony-btn, #garage-btn, #bedroom-btn, #livingroom-btn, #wc-btn {
+    justify-content: end;
+}
+
+#kitchen-label{
+    grid-area: kitchen-label;
+}
+
+#kithen-btn{
+    grid-area: kithen-btn;
+}
+
+#balcony-label{
+    border-top: 1px solid white;
+    grid-area: balcony-label;
+}
+
+#balcony-btn{
+    border-top: 1px solid white;
+    grid-area: balcony-btn;
+}
+
+#garage-label {
+    border-top: 1px solid white;
+    grid-area: garage-label;
+}
+
+#garage-btn {
+    border-top: 1px solid white;
+    grid-area: garage-btn;
+}
+
+#bedroom-label{
+    border-top: 1px solid white;
+    grid-area: bedroom-label;
+}
+
+#bedroom-btn {
+    border-top: 1px solid white;
+    grid-area: bedroom-btn;
+}
+
+#livingroom-label{
+    border-top: 1px solid white;
+    grid-area: livingroom-label;
+}
+
+#livingroom-btn {
+    border-top: 1px solid white;
+    grid-area: livingroom-btn;
+}
+
+#wc-label{
+    border-top: 1px solid white;
+    grid-area: wc-label;
+}
+
+#wc-btn {
+    border-top: 1px solid white;
+    grid-area: wc-btn;
+}
+

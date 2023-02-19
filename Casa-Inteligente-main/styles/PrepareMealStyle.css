@@ -1,0 +1,126 @@
+#container{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 6% 80% 14%;
+    grid-template-areas:
+        "notbar notbar c"
+        "menu main main"
+        "menu back back";
+}
+ 
+nav{
+    grid-area: menu;
+}
+
+main{
+    grid-area: main;
+}
+
+.sub-title{
+    width: 100%;
+}
+
+#meals-container{
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "prato1-label preparar1-btn"
+        "prato2-label preparar2-btn"
+        "prato3-label preparar3-btn"
+        "prato4-label preparar4-btn"
+        "prato5-label preparar5-btn"
+        "prato6-label preparar6-btn"
+        "prato7-label preparar7-btn";
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 76vw;
+    height: 50vh;
+}
+
+
+#prato1-label {
+    grid-area: prato1-label;
+}
+
+#prato2-label {
+    grid-area: prato2-label;
+    border-top: 1px solid white;
+}
+
+#prato3-label {
+    grid-area: prato3-label;
+    border-top: 1px solid white;
+}
+
+#prato4-label {
+    grid-area: prato4-label;
+    border-top: 1px solid white;
+}
+
+#prato5-label {
+    grid-area: prato5-label;
+    border-top: 1px solid white;
+}
+
+#prato6-label {
+    grid-area: prato6-label;
+    border-top: 1px solid white;
+}
+
+#prato7-label {
+    grid-area: prato7-label;
+    border-top: 1px solid white;
+}
+
+#preparar1-btn, #preparar2-btn, #preparar3-btn, #preparar4-btn, #preparar5-btn, #preparar6-btn, #preparar7-btn{
+    margin-right: 10px;
+    justify-content: end;
+}
+
+#preparar1-btn{
+    grid-area: preparar1-btn;
+}
+
+#preparar2-btn{
+    grid-area: preparar2-btn;
+    border-top: 1px solid white;
+}
+
+#preparar3-btn{
+    grid-area: preparar3-btn;
+    border-top: 1px solid white;
+}
+
+#preparar4-btn{
+    grid-area: preparar4-btn;
+    border-top: 1px solid white;
+}
+
+#preparar5-btn{
+    grid-area: preparar5-btn;
+    border-top: 1px solid white;
+}
+
+#preparar6-btn{
+    grid-area: preparar6-btn;
+    border-top: 1px solid white;
+}
+
+#preparar7-btn{
+    grid-area: preparar7-btn;
+    border-top: 1px solid white;
+}
+
+#new-dish{
+    position: absolute;
+    bottom: 15vh;
+    height: fit-content;
+}
+
+.back{
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+

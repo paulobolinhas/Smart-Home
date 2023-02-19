@@ -1,0 +1,90 @@
+#container{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 6% 80% 14%;
+    grid-template-areas:
+        "notbar notbar c"
+        "menu main main"
+        "menu back back";
+}
+ 
+nav{
+    grid-area: menu;
+}
+main{
+    grid-area: main;
+}
+
+.sub-title{
+    width: 100%;
+}
+
+#options-container{
+    margin: 0 4vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+        "temp-label temp"
+        "hidromassage-label hidromassage-btn"
+        "foam-label foam-btn"
+        "warm-towel-label warm-towel-btn"
+        "music-label music-btn";
+}
+
+#temperature-label{
+    grid-area: temp-label;
+}
+
+#temperature{
+    grid-area: temp;
+}
+
+#hidromassage-label{
+    border-top: 1px solid white;
+    grid-area: hidromassage-label;
+}
+
+#hidromassage-btn{
+    border-top: 1px solid white;
+    grid-area: hidromassage-btn;
+}
+
+#foam-label{
+    border-top: 1px solid white;
+    grid-area: foam-label;
+}
+
+#foam-btn{
+    border-top: 1px solid white;
+    grid-area: foam-btn;
+}
+
+#warm-towel-label{
+    border-top: 1px solid white;
+    grid-area: warm-towel-label;
+}
+
+#warm-towel-btn{
+    border-top: 1px solid white;
+    grid-area: warm-towel-btn;
+}
+
+#music-label{
+    border-top: 1px solid white;
+    grid-area: music-label;
+}
+
+#music-btn{
+    border-top: 1px solid white;
+    grid-area: music-btn;
+}
+
+#temperature,#hidromassage-btn,#foam-btn,#warm-towel-btn,#music-btn{
+    justify-content: end;
+}
+
+.back{
+    font-size: 1.3em;
+    justify-content: space-evenly;
+}
