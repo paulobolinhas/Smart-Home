@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A minha casa inteligente</title>
+    <link rel="stylesheet" href="styles/style.css">      
+    <link rel="stylesheet" href="styles/prep_bath_styles.css">
+    <script src="scripts/scripts.js" async></script>
+    <script src="scripts/prep_bath_scripts.js" async></script>
+</head>
+<body onload=startTime();>
+    <div id = "container">  
+
+        <div id="notbar">
+            &#128267; <span id='clock'></span>
+        </div>
+
+        <div id="c">
+            &#128274; &#128263; &#128233; &#128246; 
+        </div>
+
+
+        <nav >
+            <h2 class= "nav-menu sub-title">Divisões</h2>
+            <ul id = "list">
+                <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
+                <a href="balcony.html"><li class="button">Varanda</li>  </a>
+                <a href="garage.html"> <li class="button">Garagem</li>  </a>
+                <a href="bedroom.html"> <li class="button">Quarto</li>  </a>
+                <a href="livingroom.html"> <li class="button">Sala</li> </a>
+                <a href="wc.html"> <li class="button">WC</li>           </a>      
+            </ul>
+        </nav>
+
+        <main >
+            <h1>Opções para o banho</h1> <br>
+                <div id = "options-container">
+                    <span id="temperature-label" class="grid-item">Temperatura da água</span> 
+                    <span class="grid-item" id="temperature"><button class="temp-controller">-</button><span id="temperature-value">30</span>ºC<button class="temp-controller">+</button> </span>
+                    <br>
+                    <span class="grid-item" id="hidromassage-label">Hidromassagem</span> 
+                    <span id="hidromassage-btn" class="grid-item">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </span>
+                    <br>
+                    <!-- oferecer ao user opcoes, temp agua, hidro-massagem, musica, espuma, aquecer toalha. -->
+                    <span id="foam-label" class="grid-item">Espuma</span>
+                    <span id = "foam-btn" class="grid-item">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </span>
+                    <br>
+                    <span id="warm-towel-label" class="grid-item">Aquecer toalha</span>
+                    <span id = "warm-towel-btn" class="grid-item">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </span>
+                    <br>
+                    <span id="music-label" class="grid-item">Musica</span> 
+                    <span id = "music-btn" class="grid-item">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </span>
+
+
+                    <div id="loading-bar" style="display: none;">
+                        <p>A preparar banho...</p>
+                        <div id="bar">
+                            <div id="progress-bar">1%</div>
+                        </div>
+                        <div id="buttons-container">
+                            <button id="cancel" onclick="location='prep_bath.html';">Cancelar</button>
+                            <button id="OK" class="disabled">OK</button>
+                    </div>
+                </div>
+        </main>
+        <footer class="back">
+            <a href="wc.html" > <button>Cancelar</button> </a>
+            <a> <button onclick="showLoading()">Começar</button> </a>
+        </footer>
+
+    </div>
+</body>
+</html>

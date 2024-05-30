@@ -1,0 +1,285 @@
+
+#container{
+    margin: auto;
+    color: black;
+    border: 1px solid black;
+    background:  linear-gradient(315deg, #8d9dbb 0%, #7996C8 74%);
+    font-size: 2vw;
+    font-family: sans-serif;
+    height: 97vh;
+    width: 98vw;
+    overflow: hidden;
+}
+
+h1{
+  font-size: 1.6em;
+}
+
+nav{
+    border-right: 1px solid white;
+}
+
+h1{
+    text-align: center;
+}
+
+.sub-title{
+    text-align: center;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+#notbar{
+  grid-area: notbar;
+  border-bottom: 1px solid white;
+}
+
+#c{
+  grid-area: c;
+  border-bottom: 1px solid white;
+}
+
+#clock{
+  justify-self: end;
+  align-self: flex-end;
+}
+
+.back{
+    grid-area: back;
+}
+
+#list a{
+    text-decoration: none;
+}
+
+#list{
+    list-style: none;
+    line-height: 2em;
+    padding-left: 0px;
+}
+
+#list li{
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 0.75em;
+}
+
+.button {
+    color: black;
+    background-image: linear-gradient(to right, #7996C8 0%, #8d9dbb  51%, #7996C8  100%);
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 15px #eee;
+    border-radius: 10px;
+ }
+
+ .button:hover, .button:hover div{
+   background-position: right center;
+   color: white;
+   text-decoration: none;
+ }
+
+button{
+    padding: 0; /* this centers the text inside the button */
+    font-size: 0.6em;
+    height: 2.5vw;
+    background-color: inherit;
+    align-items: center;
+    border: 0.14em solid black;
+    border-radius: 10px;
+    width: 4.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a{ 
+    color: black;
+}
+
+.button a{
+    text-decoration: none;
+}
+
+.back{
+    font-size: 0.9em;
+    grid-area: back;
+    color: black;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.back a{
+    text-decoration: none;
+    height: fit-content;
+    padding: 0.6vw;
+}
+
+
+.temp-controller{
+    width: 2em;
+    height: 2em;
+    position: relative;
+    bottom: 0.1vw;
+    margin: 0 0.5em;
+}
+
+.grid-item{
+    padding: 1.1vw 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.disabled{
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3) ;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 1.2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  left: 0.15em;
+  bottom: 0.1em;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: black;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(0.7em);
+  -ms-transform: translateX(0.7em);
+  transform: translateX(0.7em);
+}
+
+.slider.round {
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#loading-bar{
+  background-color: #8099C3;
+  font-size: 0.9em;
+  color: black;
+  border: 1px solid black;
+  width: 29vw;
+  height: 13vw;
+  display: flex;
+  flex-direction:column;
+  position: absolute;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+
+#bar{
+  width: 90%;
+  background-color: grey;
+  height: 1.5em;
+}
+
+#progress-bar{
+  width: 1%;
+  height: 1.5em;
+  background-color: green;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+#buttons-container{
+  margin-top: 1vh;
+  display: flex;
+  width: 100%;
+  font-size: 1.5em;
+  justify-content: space-evenly;
+}
+
+#alert-window{
+  padding: 2vw;
+  position: absolute;
+  width: 58vw;
+  height: 19vh;
+  background-color: #8099C3;
+  border: 0.07em solid black;
+  bottom: 50vh;
+  left: 25vw;
+}
+
+#alert-window #buttons{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 5vh;
+
+}
+
+#alert-window button{
+  height: 9vh;
+  font-size: 0.7em;
+}
+
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.5vw;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 0.5vw;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;    
+}

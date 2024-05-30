@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A minha casa inteligente</title>
+    <link rel="stylesheet" href="styles/style.css">      
+    <link rel="stylesheet" href="styles/wash_car_options_styles.css"> 
+    <script src="scripts/scripts.js" async></script>
+</head>
+<body onload=startTime();>
+    <div id = "container">  
+
+        <div id="notbar">
+            &#128267; <span id='clock'></span>
+        </div>
+
+        <div id="c">
+            &#128274; &#128263; &#128233; &#128246; 
+        </div>
+
+
+        <nav >
+            <h2 class= "nav-menu sub-title">Divisões</h2>
+            <ul id = "list">
+                <a href="kitchen.html"> <li class="button">Cozinha</li> </a>
+                <a href="balcony.html"><li class="button">Varanda</li>  </a>
+                <a href="garage.html"> <li class="button">Garagem</li>  </a>
+                <a href="bedroom.html"> <li class="button">Quarto</li>  </a>
+                <a href="livingroom.html"> <li class="button">Sala</li> </a>
+                <a href="wc.html"> <li class="button">WC</li>           </a>    
+            </ul>
+        </nav>
+
+        <main >
+            <h1>Opções para lavagem</h1>
+            <div id = "options-container">
+                <span id="pre-wash-label" class="grid-item">Pré-Lavagem</span> 
+                <span class="grid-item" id="pre-wash-btn">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                <span class="grid-item" id="foam-label">Espuma</span> 
+                <span id="foam-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                <span id="shampoo-label" class="grid-item">Shampoo</span> 
+                <span id = "shampoo-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                <span id="chassis-label" class="grid-item">Chassis</span> 
+                <span id = "chassis-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                <span id="cera-label" class="grid-item">Cera</span> 
+                <span id = "cera-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                <span id="polish-label" class="grid-item">Polir</span> 
+                <span id = "polish-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+                <br>
+                 <span id="dry-label" class="grid-item">Secar</span> 
+                <span id = "dry-btn" class="grid-item">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </span>
+
+                <div id="loading-bar" style="display: none;">
+                    <p>A lavar o seu carro...</p>
+                    <div id="bar">
+                        <div id="progress-bar">1%</div>
+                    </div>
+                    <div id="buttons-container">
+                        <button id="cancel" onclick="location='wash_car_options.html';">Cancelar</button>
+                        <button id="OK" class="disabled">OK</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="back">
+            <a href="garage.html"><button>Cancelar</button></a>
+            <button onclick="showLoading()">Começar</button>
+        </footer>
+
+    </div>
+</body>
+</html>

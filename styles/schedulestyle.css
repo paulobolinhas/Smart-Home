@@ -1,0 +1,119 @@
+#container{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: 6% 80% 14%;
+    grid-template-areas:
+        "notbar notbar c"
+        "menu main main"
+        "menu back back";
+}
+ 
+nav{
+    grid-area: menu;
+}
+
+main{
+    margin-top: -1vw;
+    grid-area: main;
+}
+
+.back{
+    grid-area: back;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+#schedule-list{
+    margin: 0 4vw;
+    padding: 0 1vw;
+    font-size: 1.3em;
+    text-decoration: none;
+    list-style-type: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 45vh;
+}
+#schedule-list li:not(:first-child){
+    border-top: 1px solid white;
+}
+
+#schedule-list li{
+    padding: 2vh 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+}
+
+.days{
+    font-size: 0.5em;
+}
+
+#add{
+    position: fixed;
+    top: 70vh;
+    left: 54vw;
+}
+
+#add button{
+    font-size: 2em;
+    height: fit-content;
+    width: 1.5em;
+    border-radius: 1em;
+}
+
+#config-window{
+    padding-bottom: 1em;
+    text-align: center;
+    width: 50vw;
+    background-color: #8099C3;
+    border: 0.07em solid black;
+    position: relative;
+    bottom: 60vh;
+    left: 15vw;
+    display: none;
+}
+
+#config-window div{
+    margin: 2vh 0;
+}
+
+input[type = number], input[type = checkbox]{
+    font-size: 0.6em;
+    position: relative;
+    bottom: 0.25vw;
+}
+
+#configs{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+        "weekdays configs";
+    justify-content: space-around;
+}
+
+#weekdays{
+    text-align: left;
+    width: fit-content;
+    grid-area: weekdays;
+}
+
+#specifics{
+    text-align: left;
+    text-align: left;
+    width: fit-content;
+    grid-area: configs;
+    display: flex;
+    flex-direction: column;
+}
+
+.day{
+    margin: 2vh 0;
+}
+
+
