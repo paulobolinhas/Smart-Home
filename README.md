@@ -2,7 +2,7 @@
 Design and development of an interface for a Smart Home. PROTOTYPE DESIGN.
 
 
-### to improve
+### to improve:
 
 - The notifications bar would show notifications regarding the state of the house.
 - In the Security menu, the view camera buttons are not implemented, and would be used to view the cameras.
