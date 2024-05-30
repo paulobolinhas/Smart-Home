@@ -1,6 +1,10 @@
 # Smart-Home
 
-Prototype design and development of an interface for a Smart Home. 
+Prototype design and development of an interface for a Smart Home.
+
+## Run
+
+main.html 
 
 ### to improve:
 
