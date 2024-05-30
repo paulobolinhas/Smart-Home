@@ -1,7 +1,9 @@
 # Smart-Home
-Design and development of an interface for a Smart Home.
+Design and development of an interface for a Smart Home. PROTOTYPE DESIGN.
 
---------------
+
+### to improve
+
 - The notifications bar would show notifications regarding the state of the house.
 - In the Security menu, the view camera buttons are not implemented, and would be used to view the cameras.
 - In this same menu, the lock doors button is also not implemented.
@@ -15,4 +17,4 @@ or modify it.
 - In the menu to choose a dish to prepare, the New Dish button would be used to create a new recipe for a meal that would be added to the list.
 - In this menu, when pressing on a recipe, it would be possible to delete the recipe or change the recipe.
 - In the Garage menu the camera button is not implemented, this button would lead to the live video from the garage camera.
---------------
+
