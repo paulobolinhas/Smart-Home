@@ -1,6 +1,6 @@
 # Smart-Home
 
-PROTOTYPE DESIGN - Design and development of an interface for a Smart Home. 
+Prototype design and development of an interface for a Smart Home. 
 
 ### to improve:
 
